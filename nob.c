@@ -51,7 +51,7 @@ int main(int argc, char **argv)
         exit(EXIT_FAILURE);
     }
 
-    for (size_t i = 1; i < argc; i++) {
+    for (int i = 1; i < argc; i++) {
         if (strcmp(argv[i], "test") == 0) {
             nob_cmd_append(&cmd, "./example");
             if (!nob_cmd_run_sync_and_reset(&cmd)) {
