@@ -8,7 +8,7 @@
 
 int main(void)
 {
-    Process process = process_run((const char *[]){"cc",  "-fsyntax-only", "main.c"}, 3);
+    Process process = process_run((const char *[]){"cc",  "-fsyntax-only", "example.c"}, 3);
     if (!process.success) {
         fprintf(stderr, "EXAMPLE: cc failed\n");
     }
