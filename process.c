@@ -45,7 +45,6 @@ Process process_run(const char **args, size_t count)
         process.success =  WEXITSTATUS(status) == 0;
     }
     return process;
-    // int execvp(const char *file, char *const argv[]);
 }
 
 #elif defined(_WIN32)
